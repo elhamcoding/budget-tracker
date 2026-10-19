@@ -21,6 +21,7 @@ public class BudgetApp {
 
         }
         Collections.sort(categories);
+        Collections.reverse(categories);
         
         for (BudgetCategory item : categories) {
             System.out.println(item);
