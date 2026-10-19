@@ -30,6 +30,11 @@ public class BudgetApp {
     int difference = budgetDifference(categories);
     System.out.println("Total budget difference: $" + difference);
 
+    
+    double average = averageBudgetDifference(categories);
+    System.out.println("Average budget difference: $" + String.format("%.2f", average));
+
+
 
        /*
         BudgetCategory groceries = new BudgetCategory("Groceries", 500, 401);   
