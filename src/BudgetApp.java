@@ -15,12 +15,15 @@ public class BudgetApp {
 
             // Consume \n after spent input 
             if(scan.hasNextLine()) scan.nextLine();
-
-            
             BudgetCategory newCategory = new BudgetCategory(category, limit, spent);
             categories.add(newCategory);
 
-        } 
+        }
+        
+        for (BudgetCategory item : categories) {
+            System.out.println(item);
+        }
+
        /*
         BudgetCategory groceries = new BudgetCategory("Groceries", 500, 401);   
 
