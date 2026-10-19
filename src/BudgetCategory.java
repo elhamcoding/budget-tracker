@@ -10,4 +10,17 @@ public BudgetCategory(String category, double limit, double spent) {
     this.spent = spent;
 }
 
+public String getCategory() {
+    return category;
+}
+
+public double getLimit() {
+    return limit;
+}
+
+public double getSpent() {
+    return spent;
+}
+
+
 }
