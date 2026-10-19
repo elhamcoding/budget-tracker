@@ -22,5 +22,11 @@ public double getSpent() {
     return spent;
 }
 
+public String toString() {
+    return "Category: " + category + ", Limit: $" + limit
+            + ", Spent: $" + spent;
+}
+
+
 
 }
