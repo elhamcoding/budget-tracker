@@ -64,4 +64,17 @@ public class BudgetApp {
     return (int) Math.round(total);
     }
 
+    public static double averageBudgetDifference(List<BudgetCategory> categories) {
+        if (categories.size() == 0) {
+        return 0;
+        }
+
+        double total = 0;
+
+        for (BudgetCategory item : categories) {
+        total = total + (item.getSpent() - item.getLimit());
+        }
+
+        return total / categories.size();
+    }
 }
